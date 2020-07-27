@@ -1,0 +1,185 @@
+{
+  "categorias": [
+    
+    {
+      "titulo": "Rock Brasileiro",
+      "link": "https://pt.wikipedia.org/wiki/Rock_no_Brasil",
+      "cor": "green",
+      "link_extra": {
+        "text": "Dos clássicos aos mais atuais",
+        "url": "https://pt.wikipedia.org/wiki/Rock_no_Brasil"
+      },
+      "videos": [
+        {
+          "titulo": "Legião Urbana - Perfeição",
+          "url": "https://www.youtube.com/watch?v=UueCjRrQLM4"
+        },
+        {
+          "titulo": "Titãs - Os cegos do castelo",
+          "url": "https://www.youtube.com/watch?v=X-4cQAjhjBU"
+        },
+        {
+          "titulo": "Pitty - Memórias",
+          "url": "https://www.youtube.com/watch?v=vH9TKF7C11U"
+        },
+        {
+          "titulo": "Angra - Rebirth",
+          "url": "https://www.youtube.com/watch?v=NbJm6wX1fCw"
+        },
+        {
+          "titulo": "CPM22 - Regina let's go",
+          "url": "https://www.youtube.com/watch?v=hFFeF5D3rrM"
+        },
+        {
+          "titulo": "Ira! - Núcleo base",
+          "url": "https://www.youtube.com/watch?v=VEkp0bEQDvI"
+        },
+        {
+          "titulo": "Shaman - Fairy tale",
+          "url": "https://www.youtube.com/watch?v=Ubt_FSWRTTw"
+        }
+      ]
+    },
+    
+    {
+      "titulo": "Heavy metal",
+      "link": "https://pt.wikipedia.org/wiki/Heavy_metal",
+      "cor": "darkred",
+      "link_extra": {
+        "text": "METAL!",
+        "url": "https://pt.wikipedia.org/wiki/Heavy_metal"
+      },
+      "videos": [
+        {
+          "titulo": "Iron Maiden - Wasted years",
+          "url": "https://www.youtube.com/watch?v=Ij99dud8-0A"
+        },
+        {
+          "titulo": "Metallica - Enter sandman",
+          "url": "https://www.youtube.com/watch?v=CD-E-LDc384"
+        },
+        {
+          "titulo": "Pantera - Walk",
+          "url": "https://www.youtube.com/watch?v=AkFqg5wAuFk"
+        },
+        {
+          "titulo": "System of a down - Sugar",
+          "url": "https://www.youtube.com/watch?v=5vBGOrI6yBk"
+        },
+        {
+          "titulo": "Black Sabbath - War pigs",
+          "url": "https://www.youtube.com/watch?v=PrZFscfJxXc"
+        },
+        {
+          "titulo": "Slayer - Raining blood",
+          "url": "https://www.youtube.com/watch?v=z8ZqFlw6hYg"
+        }
+      ]
+    },
+
+    {
+      "titulo": "Rock alternativo",
+      "link": "https://pt.wikipedia.org/wiki/Rock_alternativo",
+      "cor": "blue",
+      "link_extra": {
+        "text": "Diferentões dos anos 90",
+        "url": "https://pt.wikipedia.org/wiki/Rock_alternativo"
+      },
+      "videos": [
+        {
+          "titulo": "Foo fighters - The pretender",
+          "url": "https://www.youtube.com/watch?v=SBjQ9tuuTJQ"
+        },
+        {
+          "titulo": "Red hot chili peppers - Can't stop",
+          "url": "https://www.youtube.com/watch?v=8DyziWtkfBw"
+        },
+        {
+          "titulo": "Pearl jam - Black",
+          "url": "https://www.youtube.com/watch?v=IpwHB2U3J1s"
+        },
+        {
+          "titulo": "Rush - Tom Sawyer",
+          "url": "https://www.youtube.com/watch?v=auLBLk4ibAk"
+        }
+
+      ]
+    },
+    
+    {
+      "titulo": "Emocore",
+      "link": "https://pt.wikipedia.org/wiki/Emo",
+      "cor": "lightpink",
+      "link_extra": {
+        "text": "Você também curte. Pode falar",
+        "url": "https://pt.wikipedia.org/wiki/Emo"
+      },
+      "videos": [
+        {
+          "titulo": "Fresno - Polo",
+          "url": "https://www.youtube.com/watch?v=gCOG2UyQnuM"
+        },
+        {
+          "titulo": "NX zero - Razões e emoções",
+          "url": "https://www.youtube.com/watch?v=7KbY8QT0CGI"
+        },
+        {
+          "titulo": "My chemical romance - Helena",
+          "url": "https://www.youtube.com/watch?v=UCCyoocDxBA"
+        }
+      ]
+    },
+
+    {
+      "titulo": "Black metal",
+      "link": "https://pt.wikipedia.org/wiki/Black_metal",
+      "cor": "grey",
+      "link_extra": {
+        "text": "Rock do tinhoso",
+        "url": "https://pt.wikipedia.org/wiki/Black_metal"
+      },
+      "videos": [
+        {
+          "titulo": "Darkthrone - Nor the silent whispers",
+          "url": "https://www.youtube.com/watch?v=xPXYqpf1mEg"
+        },
+        {
+          "titulo": "Burzum - Dunkelheit",
+          "url": "https://www.youtube.com/watch?v=DPyOhP1GTRQ"
+        },
+        {
+          "titulo": "Sarcófago - Midnight queen",
+          "url": "https://www.youtube.com/watch?v=PlnbfJGf98E"
+        }
+      ]
+    },
+
+    {
+      "titulo": "J-Rock",
+      "link": "https://pt.wikipedia.org/wiki/Japanese_rock",
+      "cor": "red",
+      "link_extra": {
+        "text": "Watashi wa Rock desu",
+        "url": "https://pt.wikipedia.org/wiki/Japanese_rock"
+      },
+      "videos": [
+        {
+          "titulo": "Asian kung-fu generation - Haruka Kanata",
+          "url": "https://www.youtube.com/watch?v=nJ6A6GC_ki4"
+        },
+        {
+          "titulo": "Casiopea - Asayake",
+          "url": "https://www.youtube.com/watch?v=GZ301XErfyQ"
+        },
+        {
+          "titulo": "Ningen isu - Heartless scat",
+          "url": "https://www.youtube.com/watch?v=CbI79e5iZKs"
+        },
+        {
+          "titulo": "Make up - Pegasus fantasy",
+          "url": "https://www.youtube.com/watch?v=xI2uWmGk-OI"
+        }
+      ]
+    }
+  ]
+}
