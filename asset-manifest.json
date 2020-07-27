@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/rockflix/static/css/main.94db844e.chunk.css",
-    "main.js": "/rockflix/static/js/main.67fa1eb6.chunk.js",
-    "main.js.map": "/rockflix/static/js/main.67fa1eb6.chunk.js.map",
+    "main.css": "/rockflix/static/css/main.bca4b8e1.chunk.css",
+    "main.js": "/rockflix/static/js/main.7d083c7f.chunk.js",
+    "main.js.map": "/rockflix/static/js/main.7d083c7f.chunk.js.map",
     "runtime-main.js": "/rockflix/static/js/runtime-main.1e4c1865.js",
     "runtime-main.js.map": "/rockflix/static/js/runtime-main.1e4c1865.js.map",
     "static/js/2.1af4618d.chunk.js": "/rockflix/static/js/2.1af4618d.chunk.js",
     "static/js/2.1af4618d.chunk.js.map": "/rockflix/static/js/2.1af4618d.chunk.js.map",
     "index.html": "/rockflix/index.html",
-    "precache-manifest.766995796648ac44a8892c4ca02a4469.js": "/rockflix/precache-manifest.766995796648ac44a8892c4ca02a4469.js",
+    "precache-manifest.92659e3cd9c101d1a24050a107ead4b9.js": "/rockflix/precache-manifest.92659e3cd9c101d1a24050a107ead4b9.js",
     "service-worker.js": "/rockflix/service-worker.js",
-    "static/css/main.94db844e.chunk.css.map": "/rockflix/static/css/main.94db844e.chunk.css.map",
+    "static/css/main.bca4b8e1.chunk.css.map": "/rockflix/static/css/main.bca4b8e1.chunk.css.map",
     "static/js/2.1af4618d.chunk.js.LICENSE.txt": "/rockflix/static/js/2.1af4618d.chunk.js.LICENSE.txt",
-    "static/media/rockflixlogo.png": "/rockflix/static/media/rockflixlogo.181a678f.png"
+    "static/media/rockflixlogo.png": "/rockflix/static/media/rockflixlogo.8b9b4581.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1e4c1865.js",
     "static/js/2.1af4618d.chunk.js",
-    "static/css/main.94db844e.chunk.css",
-    "static/js/main.67fa1eb6.chunk.js"
+    "static/css/main.bca4b8e1.chunk.css",
+    "static/js/main.7d083c7f.chunk.js"
   ]
 }
