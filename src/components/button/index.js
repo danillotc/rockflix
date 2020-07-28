@@ -13,11 +13,12 @@ const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    transition: opacity .3s;
+    transition: color .3s, border .3s;
     
     &:hover,
     &:focus {
-    opacity: .5;
+    color: var(--primary);
+    border: 1px solid var(--primary);
     }
 
     @media (max-width: 800px) {
