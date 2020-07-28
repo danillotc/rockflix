@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rockflix/static/css/main.5c4ebe7e.chunk.css",
-    "main.js": "/rockflix/static/js/main.b4f8dda1.chunk.js",
-    "main.js.map": "/rockflix/static/js/main.b4f8dda1.chunk.js.map",
+    "main.js": "/rockflix/static/js/main.1fdaf50c.chunk.js",
+    "main.js.map": "/rockflix/static/js/main.1fdaf50c.chunk.js.map",
     "runtime-main.js": "/rockflix/static/js/runtime-main.1e4c1865.js",
     "runtime-main.js.map": "/rockflix/static/js/runtime-main.1e4c1865.js.map",
     "static/js/2.fbe26b5e.chunk.js": "/rockflix/static/js/2.fbe26b5e.chunk.js",
     "static/js/2.fbe26b5e.chunk.js.map": "/rockflix/static/js/2.fbe26b5e.chunk.js.map",
     "index.html": "/rockflix/index.html",
-    "precache-manifest.0720ee1b0feb32d5e89187fdf9b1da37.js": "/rockflix/precache-manifest.0720ee1b0feb32d5e89187fdf9b1da37.js",
+    "precache-manifest.26f6813808a9b47162d11f9075dbe458.js": "/rockflix/precache-manifest.26f6813808a9b47162d11f9075dbe458.js",
     "service-worker.js": "/rockflix/service-worker.js",
     "static/css/main.5c4ebe7e.chunk.css.map": "/rockflix/static/css/main.5c4ebe7e.chunk.css.map",
     "static/js/2.fbe26b5e.chunk.js.LICENSE.txt": "/rockflix/static/js/2.fbe26b5e.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1e4c1865.js",
     "static/js/2.fbe26b5e.chunk.js",
     "static/css/main.5c4ebe7e.chunk.css",
-    "static/js/main.b4f8dda1.chunk.js"
+    "static/js/main.1fdaf50c.chunk.js"
   ]
 }
