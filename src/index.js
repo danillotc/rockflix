@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './pages/home/home';
+import CadastroVideo from './pages/cadastro/video';
+import CadastroCategoria from './pages/cadastro/categoria';
+
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={Home} exact/>
+      <Route path="/cadastro/video" component={CadastroVideo} exact/>
+      <Route path="/cadastro/categoria" component={CadastroCategoria} exact/>
+
+      <Route component={()=>(<div>Bem vindo ao 404! Não tem nada aqui.</div>)}/>
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
