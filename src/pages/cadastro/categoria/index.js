@@ -19,7 +19,7 @@ export default () => {
                 <button>Cadastrar!</button>
             </form>
 
-        <Link to="/">Voltar para o ROCKFLIX!</Link>
+        <Link to="/rockflix">Voltar para o ROCKFLIX!</Link>
         </PageDefault>
     )
 }
