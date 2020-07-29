@@ -7,7 +7,7 @@ import Button from '../button'
 export default () => {
     return(
         <nav className="Menu">
-            <Link to="/">
+            <Link to="/rockflix">
                 <img className="Logo" src={Logo} alt="RockFlix Logo"/>
             </Link>
 
