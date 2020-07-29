@@ -1,14 +1,25 @@
 import React from 'react';
+import { FormFieldInput, FormFieldTextArea } from './styles'
 
-export default ({label, type, name, value, onChange}) => {
+export default ({label, input, type, name, value, onChange}) => {
     return(
-        <div>
+        <>
             {label}:
-            <input 
+            {input
+            ?
+            <FormFieldInput 
                 type={type}
                 name={name}
                 value={value}
                 onChange={onChange}/>
-        </div>
+            :
+            <FormFieldTextArea 
+                type={type}
+                name={name}
+                value={value}
+                onChange={onChange}/>
+            }
+
+        </>
     )
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
-import FormField from '../../../components/FormField'
+import FormField from '../../../components/FormField';
+import Button from '../../../components/button';
 
 
 export default () => {
@@ -44,30 +45,36 @@ export default () => {
                 <div>
                     <FormField 
                         label="Nome da Categoria"
+                        input={true}
                         type="text"
                         name="nome"
                         value={valores.nome}
                         onChange={handleChange}                    
                     />
 
+                    <FormField
+                        label="Cor"
+                        input={true}
+                        type="color"
+                        name="cor"
+                        value={valores.cor}
+                        onChange={handleChange}                    
+                    />
+
+                    <br/>
+
                     <FormField 
                         label="Descrição"
+                        input={false}
                         type="text"
                         name="descricao"
                         value={valores.descricao}
                         onChange={handleChange}                    
                     />
 
-                    <FormField
-                        label="Cor"
-                        type="color"
-                        name="cor"
-                        value={valores.cor}
-                        onChange={handleChange}                    
-                    />
                 </div>
                     
-                <button>Cadastrar!</button>
+                <Button>Cadastrar!</Button>
             </form>
 
             <ul>
