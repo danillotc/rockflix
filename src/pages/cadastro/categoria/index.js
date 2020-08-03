@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
@@ -27,6 +27,15 @@ export default () => {
   function handleChange(event) {
     setValor(event.target.getAttribute('name'), event.target.value);
   }
+
+  useEffect(() => {
+    const URL = 'http://localhost:8080/categorias';
+    fetch(URL)
+      .then(async (response) => {
+        const json = await response.json();
+        setCategorias([...json]);
+      });
+  }, []);
 
   return (
     <PageDefault>
