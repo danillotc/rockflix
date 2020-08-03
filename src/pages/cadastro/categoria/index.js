@@ -6,27 +6,18 @@ import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/button';
 import InputWrapper from './styles';
+import useForm from '../../../hooks/useForm';
 
 export default () => {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '#C3A109',
   };
 
+  const { valores, handleChange, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [valores, setValores] = useState(valoresIniciais);
-
-  function setValor(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(event) {
-    setValor(event.target.getAttribute('name'), event.target.value);
-  }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
@@ -43,7 +34,7 @@ export default () => {
     <PageDefault>
       <h1>
         Quer cadastrar a categoria "
-        {valores.nome}
+        {valores.titulo}
         ", hm?
       </h1>
 
@@ -53,7 +44,7 @@ export default () => {
           ...categorias,
           valores,
         ]);
-        setValores(valoresIniciais);
+        clearForm();
       }}
       >
 
@@ -63,8 +54,8 @@ export default () => {
               label="Nome da Categoria"
               input
               type="text"
-              name="nome"
-              value={valores.nome}
+              name="titulo"
+              value={valores.titulo}
               onChange={handleChange}
             />
 
@@ -94,7 +85,13 @@ export default () => {
       </form>
 
       <ul>
-        {categorias.map((categoria, index) => <li key={`${categoria}${index}`}>{categoria.nome}</li>)}
+        {categorias.map(
+          (categoria, index) => (
+            <li key={`${categoria.titulo}${index}`}>
+              {categoria.titulo}
+            </li>
+          ),
+        )}
       </ul>
 
       <Link to="/rockflix">Voltar para o ROCKFLIX!</Link>

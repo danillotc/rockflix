@@ -1,7 +1,7 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
 import Menu from '../menu';
 import Footer from '../Footer';
-import styled from 'styled-components'; 
 
 const Main = styled.main`
     background-color: var(--black);
@@ -9,18 +9,19 @@ const Main = styled.main`
     flex: 1;
     padding-top: 20px;
     padding-left: 5%;
-    padding-right: 5%
+    padding-right: 5%;
+    ${({ paddingHome }) => css`
+        padding: ${paddingHome}
+    `}
 `;
 
-export default ({ children }) => {
-    return (
-        <>
-            <Menu/>
-                <Main>
-                    {children}
-                </Main>
-            <Footer/>
-        </>
-    )
-}
-
+// eslint-disable-next-line react/prop-types
+export default ({ children, paddingHome }) => (
+  <>
+    <Menu />
+    <Main paddingHome={paddingHome}>
+      {children}
+    </Main>
+    <Footer />
+  </>
+);

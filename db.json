@@ -1,16 +1,228 @@
 {
     "categorias": [
         {
-            "id": 1,
-            "nome": "Nome 1",
-            "descricao": "Descricao 1",
-            "cor": "#C3A109"
+            "id": "1",
+            "titulo": "Rock Brasileiro",
+            "link": "https://pt.wikipedia.org/wiki/Rock_no_Brasil",
+            "cor": "green",
+            "link_extra": {
+              "text": "Dos clássicos aos mais atuais",
+              "url": "https://pt.wikipedia.org/wiki/Rock_no_Brasil"
+            }
         },
         {
-            "id": 2,
-            "nome": "Nome 2",
-            "descricao": "Descricao 2",
-            "cor": "#C3A109"
+            "id": "2",
+            "titulo": "Heavy metal",
+            "link": "https://pt.wikipedia.org/wiki/Heavy_metal",
+            "cor": "darkred",
+            "link_extra": {
+                "text": "METAL!",
+                "url": "https://pt.wikipedia.org/wiki/Heavy_metal"
+            }
+        },
+        {
+            "id": "3",
+            "titulo": "Rock alternativo",
+            "link": "https://pt.wikipedia.org/wiki/Rock_alternativo",
+            "cor": "blue",
+            "link_extra": {
+                "text": "Diferentões dos anos 90",
+                "url": "https://pt.wikipedia.org/wiki/Rock_alternativo"
+            }
+        },
+        {
+            "id": "4",
+            "titulo": "Emocore",
+            "link": "https://pt.wikipedia.org/wiki/Emo",
+            "cor": "lightpink",
+            "link_extra": {
+                "text": "Você também curte. Pode falar",
+                "url": "https://pt.wikipedia.org/wiki/Emo"
+            }
+        },
+        {
+            "id": "5",
+            "titulo": "Black metal",
+            "link": "https://pt.wikipedia.org/wiki/Black_metal",
+            "cor": "grey",
+            "link_extra": {
+                "text": "Rock do tinhoso",
+                "url": "https://pt.wikipedia.org/wiki/Black_metal"
+            }
+        },
+        {
+            "id": "6",
+            "titulo": "J-Rock",
+            "link": "https://pt.wikipedia.org/wiki/Japanese_rock",
+            "cor": "red",
+            "link_extra": {
+                "text": "Watashi wa Rock desu",
+                "url": "https://pt.wikipedia.org/wiki/Japanese_rock"
+            }
         }
+    ],
+    "videos": [
+        {
+            "id": "1",
+            "categoriaId": "1",
+            "titulo": "Legião Urbana - Perfeição",
+            "url": "https://www.youtube.com/watch?v=UueCjRrQLM4"
+        },
+        {
+            "id": "2",
+            "categoriaId": "1",
+            "titulo": "Titãs - Os cegos do castelo",
+            "url": "https://www.youtube.com/watch?v=X-4cQAjhjBU"
+        },
+        {
+            "id": "3",
+            "categoriaId": "1",
+            "titulo": "Pitty - Memórias",
+            "url": "https://www.youtube.com/watch?v=vH9TKF7C11U"
+        },
+        {
+            "id": "4",
+            "categoriaId": "1",
+            "titulo": "Angra - Rebirth",
+            "url": "https://www.youtube.com/watch?v=NbJm6wX1fCw"
+        },
+        {
+            "id": "5",
+            "categoriaId": "1",
+            "titulo": "CPM22 - Regina let's go",
+            "url": "https://www.youtube.com/watch?v=hFFeF5D3rrM"
+        },
+        {
+            "id": "6",
+            "categoriaId": "1",
+            "titulo": "Ira! - Núcleo base",
+            "url": "https://www.youtube.com/watch?v=VEkp0bEQDvI"
+        },
+        {
+            "id": "7",
+            "categoriaId": "1",
+            "titulo": "Shaman - Fairy tale",
+            "url": "https://www.youtube.com/watch?v=Ubt_FSWRTTw"
+        },
+        {
+            "id": "8",
+            "categoriaId": "2",
+            "titulo": "Iron Maiden - Wasted years",
+            "url": "https://www.youtube.com/watch?v=Ij99dud8-0A"
+        },
+        {
+            "id": "9",
+            "categoriaId": "2",
+            "titulo": "Metallica - Enter sandman",
+            "url": "https://www.youtube.com/watch?v=CD-E-LDc384"
+        },
+        {
+            "id": "10",
+            "categoriaId": "2",
+            "titulo": "Pantera - Walk",
+            "url": "https://www.youtube.com/watch?v=AkFqg5wAuFk"
+        },
+        {
+            "id": "11",
+            "categoriaId": "2",
+            "titulo": "System of a down - Sugar",
+            "url": "https://www.youtube.com/watch?v=5vBGOrI6yBk"
+        },
+        {
+            "id": "12",
+            "categoriaId": "2",
+            "titulo": "Black Sabbath - War pigs",
+            "url": "https://www.youtube.com/watch?v=PrZFscfJxXc"
+        },
+        {
+            "id": "13",
+            "categoriaId": "2",
+            "titulo": "Slayer - Raining blood",
+            "url": "https://www.youtube.com/watch?v=z8ZqFlw6hYg"
+        },
+        {
+            "id": "14",
+            "categoriaId": "3",
+            "titulo": "Foo fighters - The pretender",
+            "url": "https://www.youtube.com/watch?v=SBjQ9tuuTJQ"
+        },
+        {
+            "id": "15",
+            "categoriaId": "3",
+            "titulo": "Red hot chili peppers - Can't stop",
+            "url": "https://www.youtube.com/watch?v=8DyziWtkfBw"
+        },
+        {
+            "id": "16",
+            "categoriaId": "3",
+            "titulo": "Pearl jam - Black",
+            "url": "https://www.youtube.com/watch?v=IpwHB2U3J1s"
+        },
+        {
+            "id": "17",
+            "categoriaId": "3",
+            "titulo": "Rush - Tom Sawyer",
+            "url": "https://www.youtube.com/watch?v=auLBLk4ibAk"
+        },
+        {
+            "id": "18",
+            "categoriaId": "4",
+            "titulo": "Fresno - Polo",
+            "url": "https://www.youtube.com/watch?v=gCOG2UyQnuM"
+        },
+        {
+            "id": "19",
+            "categoriaId": "4",
+            "titulo": "NX zero - Razões e emoções",
+            "url": "https://www.youtube.com/watch?v=7KbY8QT0CGI"
+        },
+        {
+            "id": "20",
+            "categoriaId": "4",
+            "titulo": "My chemical romance - Helena",
+            "url": "https://www.youtube.com/watch?v=UCCyoocDxBA"
+        },
+        {
+            "id": "21",
+            "categoriaId": "5",
+            "titulo": "Darkthrone - Nor the silent whispers",
+            "url": "https://www.youtube.com/watch?v=xPXYqpf1mEg"
+        },
+        {
+            "id": "22",
+            "categoriaId": "5",
+            "titulo": "Burzum - Dunkelheit",
+            "url": "https://www.youtube.com/watch?v=DPyOhP1GTRQ"
+        },
+        {
+            "id": "23",
+            "categoriaId": "5",
+            "titulo": "Sarcófago - Midnight queen",
+            "url": "https://www.youtube.com/watch?v=PlnbfJGf98E"
+        },
+        {
+            "id": "24",
+            "categoriaId": "6",
+            "titulo": "Asian kung-fu generation - Haruka Kanata",
+            "url": "https://www.youtube.com/watch?v=nJ6A6GC_ki4"
+          },
+          {
+            "id": "25",
+            "categoriaId": "6",
+            "titulo": "Casiopea - Asayake",
+            "url": "https://www.youtube.com/watch?v=GZ301XErfyQ"
+          },
+          {
+            "id": "26",
+            "categoriaId": "6",
+            "titulo": "Ningen isu - Heartless scat",
+            "url": "https://www.youtube.com/watch?v=CbI79e5iZKs"
+          },
+          {
+            "id": "27",
+            "categoriaId": "6",
+            "titulo": "Make up - Pegasus fantasy",
+            "url": "https://www.youtube.com/watch?v=xI2uWmGk-OI"
+          }
     ]
   }
