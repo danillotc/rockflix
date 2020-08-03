@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rockflix/precache-manifest.819832079b949557e4dc635c2c45f209.js"
+  "/rockflix/precache-manifest.f15a028b10067b3c11642ae280c5fb67.js"
 );
 
 self.addEventListener('message', (event) => {
