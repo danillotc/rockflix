@@ -3,20 +3,39 @@ import PropTypes from 'prop-types';
 import { FormFieldInput, FormFieldTextArea } from './styles';
 
 function FormField({
-  label, input, type, name, value, onChange,
+  label, input, type, name, value, onChange, suggestions,
 }) {
+  const hasSuggestions = Boolean(suggestions.length);
+
   return (
     <>
       {label}
       :
       {input
         ? (
-          <FormFieldInput
-            type={type}
-            name={name}
-            value={value}
-            onChange={onChange}
-          />
+          <>
+            <FormFieldInput
+              type={type}
+              name={name}
+              value={value}
+              onChange={onChange}
+              autoComplete={hasSuggestions ? 'off' : 'on'}
+              list={hasSuggestions ? 'suggestions' : ''}
+            />
+
+            {
+            hasSuggestions
+            && (
+              <datalist id="suggestions">
+                {suggestions.map((suggestion) => (
+                  <option value={suggestion} key={suggestion}>
+                    {suggestion}
+                  </option>
+                ))}
+              </datalist>
+            )
+            }
+          </>
         )
         : (
           <FormFieldTextArea
@@ -38,6 +57,7 @@ FormField.defaultProps = {
   value: '',
   type: 'text',
   onChange: () => {},
+  suggestions: [],
 };
 
 FormField.propTypes = {
@@ -47,4 +67,5 @@ FormField.propTypes = {
   value: PropTypes.string,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
+  suggestions: PropTypes.arrayOf(PropTypes.string),
 };

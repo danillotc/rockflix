@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
-import Button from '../../../components/button';
+import { Button } from '../../../components/button';
 import InputWrapper from './styles';
 import useForm from '../../../hooks/useForm';
 
