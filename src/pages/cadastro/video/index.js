@@ -10,9 +10,9 @@ import './styles.css';
 
 export default () => {
   const { handleChange, valores } = useForm({
-    titulo: 'Ningen Isu - Nirvana',
-    url: 'https://www.youtube.com/watch?v=Ox_h7UeMqYw',
-    categoria: 'Rock Brasileiro',
+    titulo: '',
+    url: '',
+    categoria: '',
   });
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
