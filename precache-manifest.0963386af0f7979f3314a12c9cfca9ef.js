@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a35b1989468a4ff315fe652251ffe58",
+    "revision": "49ef465a37a92079f6f1efc6f00c4d80",
     "url": "/rockflix/index.html"
   },
   {
-    "revision": "9cf0672cff1689ab9251",
+    "revision": "6afa174e9c672678e069",
     "url": "/rockflix/static/css/main.605830a4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rockflix/static/js/2.0002308f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9cf0672cff1689ab9251",
-    "url": "/rockflix/static/js/main.e8de87a0.chunk.js"
+    "revision": "6afa174e9c672678e069",
+    "url": "/rockflix/static/js/main.a00d0355.chunk.js"
   },
   {
     "revision": "a5c383c2b301008d045b",
