@@ -22,7 +22,7 @@ function Home() {
   return (
     <PageDefault paddingHome={0}>
 
-      {dadosIniciais.length >= 0 && (<Loading>Carregando...</Loading>)}
+      {dadosIniciais.length === 0 && (<Loading>Carregando...</Loading>)}
 
       {dadosIniciais.map((categoria, indice) => (
         indice === 0
