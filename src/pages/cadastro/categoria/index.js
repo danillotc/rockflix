@@ -7,6 +7,7 @@ import FormField from '../../../components/FormField';
 import { VideoButton } from '../../../components/button';
 import InputWrapper from './styles';
 import useForm from '../../../hooks/useForm';
+import categoriesRepository from '../../../repositories/categories';
 
 export default () => {
   const valoresIniciais = {
@@ -44,6 +45,11 @@ export default () => {
           ...categorias,
           valores,
         ]);
+        categoriesRepository.create({
+          titulo: valores.titulo,
+          cor: valores.cor,
+          link_extra: { text: valores.descricao },
+        });
         clearForm();
       }}
       >
