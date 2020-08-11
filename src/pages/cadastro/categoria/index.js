@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import { VideoButton } from '../../../components/button';
+import { CategoryList, SmallButton } from '../../../components/CategoryList';
 import InputWrapper from './styles';
 import useForm from '../../../hooks/useForm';
 import categoriesRepository from '../../../repositories/categories';
@@ -90,15 +91,37 @@ export default () => {
         <VideoButton>Cadastrar!</VideoButton>
       </form>
 
-      <ul>
+      <hr style={{ color: 'var(--white)' }} />
+
+      <CategoryList>
+        <caption>Lista de categorias</caption>
+        <tr>
+          <th>Gênero</th>
+          <th>Descrição</th>
+          <th>Ações</th>
+        </tr>
+
         {categorias.map(
           (categoria, index) => (
-            <li key={`${categoria.titulo}${index}`}>
-              {categoria.titulo}
-            </li>
+            <tr key={`${categoria.titulo}${index}`}>
+              <td>
+                {categoria.titulo}
+              </td>
+              <td>
+                {categoria.link_extra.text}
+              </td>
+              <td>
+                <SmallButton
+                  type="button"
+                  onClick={() => categoriesRepository.destroy('iddacategoria')}
+                >
+                  Excluir
+                </SmallButton>
+              </td>
+            </tr>
           ),
         )}
-      </ul>
+      </CategoryList>
 
       <Link to="/rockflix">Voltar para o ROCKFLIX!</Link>
 
