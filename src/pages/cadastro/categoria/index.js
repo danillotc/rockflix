@@ -95,6 +95,7 @@ export default () => {
 
       <CategoryList>
         <caption>Lista de categorias</caption>
+
         <tr>
           <th>Gênero</th>
           <th>Descrição</th>
@@ -113,7 +114,7 @@ export default () => {
               <td>
                 <SmallButton
                   type="button"
-                  onClick={() => categoriesRepository.destroy('iddacategoria')}
+                  onClick={() => {}}
                 >
                   Excluir
                 </SmallButton>
