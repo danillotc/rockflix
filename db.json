@@ -5,8 +5,8 @@
       "titulo": "Rock Brasileiro",
       "link": "https://pt.wikipedia.org/wiki/Rock_no_Brasil",
       "cor": "green",
+      "descricao": "Dos clássicos aos mais atuais",
       "link_extra": {
-        "text": "Dos clássicos aos mais atuais",
         "url": "https://pt.wikipedia.org/wiki/Rock_no_Brasil"
       }
     },
@@ -15,8 +15,8 @@
       "titulo": "Heavy metal",
       "link": "https://pt.wikipedia.org/wiki/Heavy_metal",
       "cor": "darkred",
+      "descricao": "METAL!",
       "link_extra": {
-        "text": "METAL!",
         "url": "https://pt.wikipedia.org/wiki/Heavy_metal"
       }
     },
@@ -25,8 +25,8 @@
       "titulo": "Rock alternativo",
       "link": "https://pt.wikipedia.org/wiki/Rock_alternativo",
       "cor": "blue",
+      "descricao": "Diferentões dos anos 90",
       "link_extra": {
-        "text": "Diferentões dos anos 90",
         "url": "https://pt.wikipedia.org/wiki/Rock_alternativo"
       }
     },
@@ -35,8 +35,8 @@
       "titulo": "Emocore",
       "link": "https://pt.wikipedia.org/wiki/Emo",
       "cor": "lightpink",
+      "descricao": "Você também curte. Pode falar",
       "link_extra": {
-        "text": "Você também curte. Pode falar",
         "url": "https://pt.wikipedia.org/wiki/Emo"
       }
     },
@@ -45,8 +45,8 @@
       "titulo": "Black metal",
       "link": "https://pt.wikipedia.org/wiki/Black_metal",
       "cor": "grey",
+      "descricao": "Rock do tinhoso",
       "link_extra": {
-        "text": "Rock do tinhoso",
         "url": "https://pt.wikipedia.org/wiki/Black_metal"
       }
     },
@@ -55,8 +55,8 @@
       "titulo": "J-Rock",
       "link": "https://pt.wikipedia.org/wiki/Japanese_rock",
       "cor": "red",
+      "descricao": "Watashi wa Rock desu",
       "link_extra": {
-        "text": "Watashi wa Rock desu",
         "url": "https://pt.wikipedia.org/wiki/Japanese_rock"
       }
     }

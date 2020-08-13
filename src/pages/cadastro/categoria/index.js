@@ -49,7 +49,7 @@ export default () => {
         categoriesRepository.create({
           titulo: valores.titulo,
           cor: valores.cor,
-          link_extra: { text: valores.descricao },
+          descricao: valores.descricao,
         });
         clearForm();
       }}
@@ -96,30 +96,34 @@ export default () => {
       <CategoryList>
         <caption>Lista de categorias</caption>
 
-        <tr>
-          <th>Gênero</th>
-          <th>Descrição</th>
-          <th>Ações</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>Gênero</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
 
         {categorias.map(
           (categoria, index) => (
-            <tr key={`${categoria.titulo}${index}`}>
-              <td>
-                {categoria.titulo}
-              </td>
-              <td>
-                {categoria.link_extra.text}
-              </td>
-              <td>
-                <SmallButton
-                  type="button"
-                  onClick={() => {}}
-                >
-                  Excluir
-                </SmallButton>
-              </td>
-            </tr>
+            <tbody key={`${categoria.titulo}${index}`}>
+              <tr>
+                <td>
+                  {categoria.titulo}
+                </td>
+                <td>
+                  {categoria.descricao}
+                </td>
+                <td>
+                  <SmallButton
+                    type="button"
+                    onClick={() => { }}
+                  >
+                    Excluir
+                  </SmallButton>
+                </td>
+              </tr>
+            </tbody>
           ),
         )}
       </CategoryList>
