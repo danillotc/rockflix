@@ -19,6 +19,7 @@ function FormField({
               name={name}
               value={value}
               onChange={onChange}
+              maxLength={20}
               autoComplete={hasSuggestions ? 'off' : 'on'}
               list={hasSuggestions ? 'suggestions' : ''}
             />
@@ -43,6 +44,8 @@ function FormField({
             name={name}
             value={value}
             onChange={onChange}
+            placeholder="Máximo de 70 caracteres"
+            maxLength={70}
           />
         )}
 
