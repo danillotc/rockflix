@@ -19,6 +19,8 @@ export default () => {
 
   const { valores, handleChange, clearForm } = useForm(valoresIniciais);
 
+  const [categoriesChanged, setCategoriesChanged] = useState(true);
+
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
@@ -30,27 +32,36 @@ export default () => {
         const json = await response.json();
         setCategorias([...json]);
       });
-  }, []);
+  }, [categoriesChanged]);
 
   return (
     <PageDefault>
       <h1>
         Quer cadastrar a categoria "
         {valores.titulo}
-        ", hm?
+        ", certo?
       </h1>
 
       <form onSubmit={function handleSubmit(event) {
         event.preventDefault();
+
+        const data = new Date();
+        const numeroAleatorio = Math.round(Math.random() * 100000).toString();
+        const idGerado = numeroAleatorio + data.getMilliseconds().toString();
+        valores.id = idGerado;
+
         setCategorias([
           ...categorias,
           valores,
         ]);
+
         categoriesRepository.create({
+          id: idGerado,
           titulo: valores.titulo,
           cor: valores.cor,
           descricao: valores.descricao,
         });
+
         clearForm();
       }}
       >
@@ -117,7 +128,10 @@ export default () => {
                 <td>
                   <SmallButton
                     type="button"
-                    onClick={() => { }}
+                    onClick={() => {
+                      setCategoriesChanged(!categoriesChanged);
+                      categoriesRepository.destroy(categoria.id);
+                    }}
                   >
                     Excluir
                   </SmallButton>
