@@ -64,6 +64,7 @@ export default () => {
           name="url"
           value={valores.url}
           onChange={handleChange}
+          maxLength={300}
         />
 
         <FormField

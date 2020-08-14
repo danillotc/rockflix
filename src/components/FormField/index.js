@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FormFieldInput, FormFieldTextArea } from './styles';
 
 function FormField({
-  label, input, type, name, value, onChange, suggestions,
+  label, input, type, name, value, onChange, suggestions, maxLength,
 }) {
   const hasSuggestions = Boolean(suggestions.length);
 
@@ -19,7 +19,7 @@ function FormField({
               name={name}
               value={value}
               onChange={onChange}
-              maxLength={20}
+              maxLength={maxLength}
               autoComplete={hasSuggestions ? 'off' : 'on'}
               list={hasSuggestions ? 'suggestions' : ''}
             />
@@ -61,6 +61,7 @@ FormField.defaultProps = {
   type: 'text',
   onChange: () => {},
   suggestions: [],
+  maxLength: 20,
 };
 
 FormField.propTypes = {
@@ -71,4 +72,5 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   suggestions: PropTypes.arrayOf(PropTypes.string),
+  maxLength: PropTypes.number,
 };
