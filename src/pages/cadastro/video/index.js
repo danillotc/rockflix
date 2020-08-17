@@ -103,7 +103,12 @@ export default () => {
 
       <h1>Deletar um vídeo da categoria:</h1>
 
-      <select name="videos" id="listadevideos">
+      <select
+        name="videos"
+        id="listadevideos"
+      >
+        {categoriaSelecionada.length === 0
+          && <option>Selecione uma categoria</option>}
         {categorias.map((categoria) => (
           <option
             key={categoria.id}
