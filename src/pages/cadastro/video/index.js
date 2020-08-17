@@ -80,7 +80,8 @@ export default () => {
         <VideoButton>Cadastrar!</VideoButton>
       </form>
 
-      <Link to="/cadastro/categoria">Cadastrar nova categoria</Link>
+      <Link className="routerLink" to="/cadastro/categoria">Cadastrar nova categoria</Link>
+
     </PageDefault>
   );
 };

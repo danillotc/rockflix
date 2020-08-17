@@ -9,6 +9,7 @@ import { CategoryList, SmallButton } from '../../../components/CategoryList';
 import InputWrapper from './styles';
 import useForm from '../../../hooks/useForm';
 import categoriesRepository from '../../../repositories/categories';
+import '../video/styles.css';
 
 export default () => {
   const valoresIniciais = {
@@ -129,8 +130,8 @@ export default () => {
                   <SmallButton
                     type="button"
                     onClick={() => {
-                      setCategoriesChanged(!categoriesChanged);
                       categoriesRepository.destroy(categoria.id);
+                      setCategoriesChanged(!categoriesChanged);
                     }}
                   >
                     Excluir
@@ -142,7 +143,7 @@ export default () => {
         )}
       </CategoryList>
 
-      <Link to="/rockflix">Voltar para o ROCKFLIX!</Link>
+      <Link className="routerLink" to="/rockflix">Voltar para Rockflix!</Link>
 
     </PageDefault>
   );
