@@ -129,7 +129,7 @@ export default () => {
               <td>
                 <SmallButton
                   type="button"
-                  onClick={() => { alert(`Tem certeza que deseja excluir ${video.titulo}?`); }}
+                  onClick={() => {}}
                 >
                   Excluir
                 </SmallButton>
