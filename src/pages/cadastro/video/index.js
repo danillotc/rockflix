@@ -3,9 +3,10 @@ import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
-import { VideoButton } from '../../../components/button';
+import { VideoButton, SmallButton } from '../../../components/button';
 import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categories';
+import VideosList from '../../../components/VideosList';
 import './styles.css';
 
 export default () => {
@@ -16,6 +17,8 @@ export default () => {
   });
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
+  const [videosDaCategoria, setVideosDaCategoria] = useState([]);
+  const [categoriaSelecionada, setCategoriaSelecionada] = useState([]);
   const categoryTitles = categorias.map((categoria) => categoria.titulo);
 
   useEffect(() => {
@@ -25,6 +28,18 @@ export default () => {
         setCategorias(categoriasDoServer);
       });
   }, []);
+
+  useEffect(() => {
+    categoriasRepository.getAllWithVideos()
+      .then((categoriaDoServer) => {
+        const objetoCategoria = categoriaDoServer.filter(
+          (categoria) => categoria.id === categoriaSelecionada,
+        )[0];
+        setVideosDaCategoria(
+          objetoCategoria ? objetoCategoria.videos : [],
+        );
+      });
+  }, [categoriaSelecionada]);
 
   return (
     <PageDefault>
@@ -81,6 +96,48 @@ export default () => {
       </form>
 
       <Link className="routerLink" to="/cadastro/categoria">Cadastrar nova categoria</Link>
+
+      <hr style={{ color: 'var(--white)' }} />
+
+      <h1>Deletar um vídeo da categoria:</h1>
+
+      <select name="videos" id="listadevideos">
+        {categorias.map((categoria) => (
+          <option
+            key={categoria.id}
+            value={categoria.id}
+            onClick={() => setCategoriaSelecionada(categoria.id)}
+          >
+            {categoria.titulo}
+          </option>
+        ))}
+      </select>
+
+      <VideosList>
+        <thead>
+          <tr>
+            <th>Nome do vídeo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          {videosDaCategoria.map((video) => (
+            <tr key={video.id}>
+              <td>
+                {video.titulo}
+              </td>
+              <td>
+                <SmallButton
+                  type="button"
+                  onClick={() => { alert(`Tem certeza que deseja excluir ${video.titulo}?`); }}
+                >
+                  Excluir
+                </SmallButton>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </VideosList>
 
     </PageDefault>
   );

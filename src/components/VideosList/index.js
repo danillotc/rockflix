@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CategoryList = styled.table`
+const VideosList = styled.table`
     border-collapse: collapse;
     margin-bottom: 2rem;
     padding: 0;
@@ -20,4 +20,4 @@ const CategoryList = styled.table`
     }
 `;
 
-export default CategoryList;
+export default VideosList;
