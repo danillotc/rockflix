@@ -17,8 +17,9 @@ export default () => {
   });
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
-  const [videosDaCategoria, setVideosDaCategoria] = useState([]);
   const [categoriaSelecionada, setCategoriaSelecionada] = useState([]);
+  const [videosDaCategoria, setVideosDaCategoria] = useState([]);
+  const [videosChanged, setVideosChanged] = useState(true);
   const categoryTitles = categorias.map((categoria) => categoria.titulo);
 
   useEffect(() => {
@@ -39,7 +40,7 @@ export default () => {
           objetoCategoria ? objetoCategoria.videos : [],
         );
       });
-  }, [categoriaSelecionada]);
+  }, [categoriaSelecionada, videosChanged]);
 
   return (
     <PageDefault>
@@ -70,6 +71,7 @@ export default () => {
           name="titulo"
           value={valores.titulo}
           onChange={handleChange}
+          maxLength={60}
         />
 
         <FormField
@@ -129,7 +131,10 @@ export default () => {
               <td>
                 <SmallButton
                   type="button"
-                  onClick={() => {}}
+                  onClick={() => {
+                    videosRepository.destroy(video.id);
+                    setVideosChanged(!videosChanged);
+                  }}
                 >
                   Excluir
                 </SmallButton>
