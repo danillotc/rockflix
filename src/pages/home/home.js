@@ -35,7 +35,7 @@ function Home() {
       {dadosIniciais.map((categoria, indice) => (
         indice === 0
           ? (
-            <div>
+            <div key="banner">
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].titulo}
                 url={dadosIniciais[0].videos[0].url}
